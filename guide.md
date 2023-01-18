@@ -31,15 +31,22 @@
  - **password** : string
  - **name** : string
  - **telephone** : string
+ - **is_actived** : boolean
 
-### Year ```year```
+### User Settings ```user_settings```
  - **id** : uuid
+ - **user_id** : uuid
+
+### Cycle ```year```
+ - **id** : uuid
+ - **user_id** : uuid
  - **title** : uuid
  - **description** : string
  - **current_month** : string
 
 ### Month ```mounth```
  - **id** : uuid
+ - **user_id** : uuid
  - **title** : string
  - **description** : string
  - **started_at** : date
@@ -54,6 +61,7 @@
 
 ### Transaction ```transaction```
  - **id** : uuid
+ - **user_id** : uuid
  - **title** : string
  - **value** : number
  - **description** : string
@@ -79,6 +87,7 @@
 
 ### Payer  ```payer```
  - **id** : uuid
+ - **user_id** : uuid
  - **name** : string
  - **alias** : string
  - **type** : string ```(person | entity | expense)```
